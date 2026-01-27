@@ -1,0 +1,115 @@
+body{
+    background-color: black;
+    animation: day 30s infinite 5s;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.image1{
+    width: 5px;
+    height: 5px;
+    margin: 50px;
+    border: 5px solid #4A235A;
+}
+.image1:hover{
+    width: 150px;
+    height: 200px;
+    margin: 50px;
+}
+.image2{
+    width: 5px;
+    height: 5px;
+    margin: 50px;
+    background-color: black;
+    border: 5px solid #4A235A;
+}
+.image2:hover{
+    width: 200px;
+    height: 150px;
+    margin: 50px;
+}
+.Ini{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    display: block;
+}
+.Fin{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+    display: block;
+}
+.sun{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #020202, #665a5a, transparent);
+    box-shadow: 0 0 100px 20px #fff;
+}
+.shadow{
+    height: 165px;
+    width: 170px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffd700, #ffa500, transparent);
+    top: -5px;
+    left: 0px;
+    align-items: center;
+    animation: moveShadow 30s infinite 5s;
+    border: 1px solid yellow;
+    box-shadow: 0 0 50px 10px #ffd700;
+}
+.pala{
+    color: black;
+    text-align: center;
+    padding: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.Nom{
+    text-align: center;
+    color: white;
+    margin: 35% 0;
+}
+@keyframes moveShadow {
+    0%{
+        transform: translate(150px);
+        background-color: white;
+    }
+    50%{
+        transform: translate(-10px);
+        background-color: black;
+    }
+    100%{
+        transform: translate(-170px);
+        background-color: white;
+    }
+}
+@keyframes day {
+    0%{
+        background-color: black;
+    }
+    20%{
+        background-color: black;
+    }
+    40%{
+        background-color: #545454;
+    }
+    50%{
+        background-color: white;
+    }
+    60%{
+        background-color: #545454;
+    }
+    80%{
+        background-color: black;
+    }
+    100%{
+        background-color: black;
+    }
+}
