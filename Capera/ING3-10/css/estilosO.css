@@ -1,0 +1,38 @@
+body{
+	margin:0;
+	padding: 0;	
+	background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+#login .container #login-row #login-column #login-box{
+	margin-top: 70px;
+	padding: 10px;
+	margin-bottom: 10px;
+	max-width: 600px;
+	height: 320px;
+	box-shadow: 2px 2px 2px 2px #343a40;
+	border-radius: 3px;
+}
+#btn-ingreso{
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	
+}
+
+#container form img{
+	margin: 15px auto;
+	text-align: center;
+	display: block;
+}
+#btn-ingreso:hover{
+	background: #641E16;
+	color: fff;
+}
+
+
+.alert{
+	font-family: 'Arial';
+	font-size: 16px;
+	text-align: center;
+}

@@ -1,0 +1,28 @@
+#fotter .contenedor {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ padding-bottom: 25px;
+ background: #1C2833;
+ width: 100%;
+ color: white;
+ margin-top: 15px;
+}
+.copy {
+	padding: 20px;
+	font-size: 20px;
+}
+.sociales {
+	width: 100%;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+}
+.sociales a {
+	color: white;;
+	text-decoration: none;
+	padding: 5px;
+}
+center {
+	padding: 20px;
+}

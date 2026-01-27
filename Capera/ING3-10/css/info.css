@@ -1,0 +1,39 @@
+#info {
+	background: #1C2833;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+
+}
+#info:hover{
+	background: #515A5A;
+}
+#info .contenedor {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.info-pet {
+	margin: 20px;
+}
+.info-pet img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 7px solid #1C2833;
+}
+
+/*Aqui empieza la clase 2*/
+/**Css responsive**/
+
+@media (min-width: 480px){
+	.info-pet {
+		width: 42%;
+	}
+}
+
+@media (min-width: 1024px){
+	.info-pet {
+		width: auto;
+	}
+}

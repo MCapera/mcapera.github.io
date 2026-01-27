@@ -1,0 +1,105 @@
+#blog h3, h4 {
+	padding: 5px;
+	text-align: center;
+}
+.tiSistem{
+	font-size: 34px;
+	padding: 1px;
+	text-align: center;
+	text-shadow: 1px 1px 0px,2px 2px 0px #1C2833, 3px 3px 0px #1C2833, 3px 3px 3px #1C2833;
+}
+.modGaleno{
+	background: #1C2833;
+	color: #1C2833;
+	text-align: center;
+	padding: 20px;
+}
+.modGaleno:hover{
+	background: #1C2833;
+}
+#blog h4 {
+	background: #1C2833;
+	color: #fff;
+	border-radius: 5px;
+	padding: 5px;
+}
+#blog h4:hover {
+	background: #515A5A;
+}
+#blog .contenedor {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#blog article {
+	margin: 15px;
+}
+#blog img {
+	padding: 5px;
+	width: 100%;
+	max-width: 100px;
+	border-radius: 50%;
+}
+.caja{
+	float: left;
+	width: 250px;
+	margin: 8px;
+	text-align:center; 
+	/*border: 1px solid;*/
+}
+.cajaBlog{
+	float: left;
+	width: 95%;
+	margin: 8px;
+	text-align:center; 
+	/*border: 1px solid;*/
+}
+
+.efecto:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+.contenido img{
+	padding: 5px;
+	width: 95%;
+	max-width: 100px;
+	border-radius: 50%;
+	
+}
+ 
+p {  	
+	overflow: hidden;
+  	text-align: justify; 
+}
+
+
+.slider{
+	text-align: center;
+	padding: 2px;
+}
+
+
+.slider a {
+	text-decoration: none;
+	width: 100px;
+	color: #1C2833;	
+	padding: 7px;
+	margin-top: 10px;
+	border: 3px solid #1C2833;
+	border-radius: 15px;
+}
+.slider a:hover {
+	background: #1C2833;
+	color: #515A5A;
+	
+}
+
+/*
+p:after{
+  
+  background: #FFEEAA;
+  position: absolute;
+  top: 4.5rem;
+  right: 0;
+}
+*/
