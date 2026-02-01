@@ -1,10 +1,3 @@
-function scrollToSection(id) {
-  const element = document.getElementById(id);
-  const offset = 80; // altura del header
-  const position = element.offsetTop - offset;
+const texto = document.getElementById('texto');
+const letras = texto.innerText.split("");
 
-  window.scrollTo({
-    top: position,
-    behavior: 'smooth'
-  });
-}
