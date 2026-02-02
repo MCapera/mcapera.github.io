@@ -99,7 +99,10 @@ body{
     justify-content: center;
     height: auto;
     text-align: center;
+
 }
+
+/* SECCION #1 */
 .mybio{
     display: flex;
     border: 3px solid #2A2A2A;
@@ -145,6 +148,9 @@ body{
     margin: 5px;
     border: #000 2px solid;
 }
+
+/* SECCION #2 */
+
 .habilidades{
     display: flex;
     text-align: center;
@@ -153,20 +159,31 @@ body{
     color: #2A2A2A;
     width: 100%;
 }
-.vision{
+.proyectos{
     display: flex;
     text-align: center;
     margin: 5px;
     border: 3px solid #2A2A2A;
     color: #2A2A2A;
 }
+
+/* SECCION #4 */
+
 .contact{
-    display: flex;
+    display: block;
     text-align: center;
     margin: 5px;
     border: 3px solid #2A2A2A;
     padding: 10px;
     color: #2A2A2A;
+    width: 50%;
+}
+form{
+    display: block;
+    margin: 10px;
+    justify-content: center;
+    height: auto;
+    text-align: center;
 }
 .formulario{
     display: block;
@@ -182,9 +199,6 @@ body{
     text-align: justify;
     width: 50%;
     border: #000 2px solid;
-}
-.msg{
-    width: 50%;
 }
 input{
     width: 100%;
@@ -216,8 +230,16 @@ input{
     border: 5px solid #000;
     width: 100%;
     margin: 20px;
-    padding-right: 10px;
+    padding: 10px;
     display: flex;
+}
+#proyec{
+    text-align: center;
+    border: 5px solid #000;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    display: block;
 }
 @media( max-width:991px){
     .welcome{
