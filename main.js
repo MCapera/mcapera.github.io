@@ -1,18 +1,23 @@
-(function(){
-  emailjs.init(NjDfkMtd40E2jp7xV);
-})();
 
-document.getElementById("contactForm").addEventListener("submit", function(e) {
+emailjs.init({
+  publicKey: "p8Kzb71k2qX5xVCqS",
+});
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
   emailjs.sendForm(
-    service_1qq20wl,
-    plantilla_ufzxc2m,
+    "service_1qq20w1",
+    "plantilla_ufzxc2m",
     this
-  ).then(() => {
-    alert("Mensaje enviado ✅");
-    this.reset();
-  }, () => {
-    alert("Error al enviar ❌");
-  });
+  ).then(
+    () => {
+      alert("Mensaje enviado ✅");
+      this.reset();
+    },
+    (error) => {
+      console.error(error);
+      alert("Error al enviar ❌");
+    }
+  );
 });
