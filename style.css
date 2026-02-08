@@ -374,6 +374,21 @@ input{
     .cont{
         width: 95%;
     }
+    .cajita{
+        display: block;
+        width: auto;
+    }
+    #proyec{
+        display: grid;
+        height: auto;
+    }
+    .Cproyec{
+        display: block;
+        width: auto;
+    }
+    .Fproy{
+        width: auto;
+    }
 }
 /*INICIO DE FORMULARIO*/
 
