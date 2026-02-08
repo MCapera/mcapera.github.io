@@ -11,6 +11,7 @@ body{
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
+    
 }
 
 /* header */
@@ -21,9 +22,11 @@ body{
 }
 .back{
     padding: 40px 0;
-    background-color: #101828;
+    background-color: #F8FAFC;
     text-align: center;
-    color: #fff;
+    color: #000;
+    border-bottom: ;
+    box-shadow: #000 0px 1px 5px;
 }
 .menu{
     position: absolute;
@@ -34,11 +37,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
+    z-index: 1000PX;
 }
 .logo{
     font-size: 24px;
-    color: #fff;
+    color: #000;
     font-weight: 800;
     text-transform: uppercase;
 }
@@ -49,7 +52,7 @@ body{
 .menu .navbar ul li a{
     font-size: 18px;
     padding: 20px;
-    color: #fff;
+    color: #000;
     display: block;
 }
 .menu .navbar ul li a:hover{
@@ -80,7 +83,7 @@ body{
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #2A2A2A;
+        background-color: #F8FAFC;
         display: none;
     }
     .menu .navbar ul li{
@@ -96,22 +99,28 @@ body{
 .cuerpo{
     display: block;
     margin: 10px;
-    justify-content: center;
+    justify-items: center;
     height: auto;
     text-align: center;
-
 }
 
-/* SECCION #1 */
+/*PRIMERA PARTE*/
+
 .mybio{
-    display: flex;
-    border: 3px solid #2A2A2A;
+    display: grid;
+    border: 0px solid #2A2A2A;
     text-align: center;
     font-family: Arial;
-    width: auto;
     margin: 5px;
     padding: 5px;
+    justify-items: center;
     color: #2A2A2A;
+}
+.mybio h1{
+    font-size: 30px;
+    margin: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: #000 0px 0.5px 3px;
 }
 .person{
     border: 2px solid #2A2A2A;
@@ -130,16 +139,20 @@ body{
     margin-left: 10px;
     list-style: circle inside;
 }
+
+/*FINALIZA PRIMERA PARTE Y EMPIEZA SEGUNDA*/
+
 #block{
     display: block;
-    padding: 5px 0px 5px 0px;
+    padding: 0px 20px 0px 20px;
     width: 50%;
+    justify-items: center;
 }
 #info{
     margin: 5px;
     padding: 10px;
-    width: 60%;
-    display: block;
+    width: 50%;
+    display: flex;
 }
 .for-me{
     font-size: 20px;
@@ -149,7 +162,7 @@ body{
     border: #000 2px solid;
 }
 
-/* SECCION #2 */
+/*FINALIZA SEGUNDA PARTE Y EMPIEZA TERCERA*/
 
 .habilidades{
     display: flex;
@@ -157,7 +170,33 @@ body{
     margin: 5px;
     border: 3px solid #2A2A2A;
     color: #2A2A2A;
-    width: 100%;
+    justify-content: center;
+    width: 80%;
+}
+.caja{
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid #2A2A2A;
+    padding: 10px;
+    color: #2A2A2A;
+    width: 50%;
+}
+.cajita{
+    display: inline-flex;
+    margin: 10px;
+    border: 2px solid #2A2A2A;
+    padding: 10px;
+    color: #2A2A2A;
+    width: 50%;
+    justify-content: center;
+    border-radius: 25px;
+    border-style: dashed;
+}
+.cajita h2{
+    margin: 12.5px 0px 0px 0px;
+}
+#op{
+    width: 50%;
 }
 .proyectos{
     display: flex;
@@ -165,40 +204,6 @@ body{
     margin: 5px;
     border: 3px solid #2A2A2A;
     color: #2A2A2A;
-}
-
-/* SECCION #4 */
-
-.contact{
-    display: block;
-    text-align: center;
-    margin: 5px;
-    border: 3px solid #2A2A2A;
-    padding: 10px;
-    color: #2A2A2A;
-    width: 50%;
-}
-form{
-    display: block;
-    margin: 10px;
-    justify-content: center;
-    height: auto;
-    text-align: center;
-}
-.formulario{
-    display: block;
-    margin: 10px;
-    justify-content: center;
-    height: auto;
-    text-align: center;
-    border: #000 2px solid;
-}
-.formulario form label{
-    list-style: circle inside;
-    display: block;
-    text-align: justify;
-    width: 50%;
-    border: #000 2px solid;
 }
 input{
     width: 100%;
@@ -209,14 +214,16 @@ input{
 .imk{
     border: 2px solid #2A2A2A;
     margin: 5px;
-    width: 250px;
-    height: 250px;
+    width: 350;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: #000 0px 5px 15px;
 }
 .imk-hab{
     border: 2px solid #2A2A2A;
     margin: 5px;
-    width: 12.5%;
-    height: 100px;
+    width: 50%;
+    height: 50%;
 }
 #imagen{
     text-align: right;
@@ -270,15 +277,62 @@ input{
         width: 95%;
     }
 }
+/*INICIO DE FORMULARIO*/
+
+.formu{
+    margin: 10px;
+    border: 3px solid #2A2A2A;
+    padding: 10px;
+    color: #2A2A2A;
+    text-align: center;
+    justify-items: center;
+}
+.contact{
+    margin: 5px;
+    border: 3px solid #2A2A2A;
+    padding: 20px;
+    color: #2A2A2A;
+    border-radius: 20px;
+    width: 50%;
+}
+.formulario form{
+    display: block;
+    text-align: justify;
+}
+#mensaje{
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+}
+input{
+    border-radius: 20px;
+    margin: 10px;
+}
+.btn{
+    border-radius: 20px;
+    background-color: #101828;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:#45556C;
+}
+
+/*FIN DE FORMULARIO*/
 
 /*footer*/
 
 .pie{
+    box-shadow: #000 0px 1px 5px;
     border: 0px solid #000;
     padding: 1em 0;
-    background-color: #101828;
+    background-color: #F8FAFC;
     text-align: center;
-    color: #fff;
+    color: #000;
 }
 .redes{
     margin: 10px;
