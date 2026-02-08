@@ -20,18 +20,24 @@ body{
     margin: 0 auto;
     max-width: 1100px;
 }
+.texto{
+    background: #101828;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
 .back{
     padding: 40px 0;
     background-color: #F8FAFC;
     text-align: center;
     color: #000;
-    border-bottom: ;
     box-shadow: #000 0px 1px 5px;
 }
 .menu{
     position: absolute;
     padding: 10px;
-    top: 0;
+    top: 5px;
     left: 0;
     right: 0;
     display: flex;
@@ -51,8 +57,8 @@ body{
 }
 .menu .navbar ul li a{
     font-size: 18px;
-    padding: 20px;
-    color: #000;
+    padding: 10px;
+    color: #fff;
     display: block;
 }
 .menu .navbar ul li a:hover{
@@ -102,19 +108,24 @@ body{
     justify-items: center;
     height: auto;
     text-align: center;
+    padding: 1px;
 }
 
 /*PRIMERA PARTE*/
 
 .mybio{
     display: grid;
-    border: 0px solid #2A2A2A;
+    border: 5px solid #2A2A2A;
     text-align: center;
     font-family: Arial;
     margin: 5px;
     padding: 5px;
+    width: 70%;
     justify-items: center;
     color: #2A2A2A;
+    border-radius: 25px;
+    border: #000 2px solid;
+    border-style: dashed;
 }
 .mybio h1{
     font-size: 30px;
@@ -123,8 +134,8 @@ body{
     text-shadow: #000 0px 0.5px 3px;
 }
 .person{
-    border: 2px solid #2A2A2A;
-    width: 40%;
+    border: 0px solid #2A2A2A;
+    width: 60%;
 }
 #rasgos{
     text-align: left;
@@ -151,35 +162,57 @@ body{
 #info{
     margin: 5px;
     padding: 10px;
-    width: 50%;
+    width: auto;
     display: flex;
+    justify-content: center;
+    border-radius: 25px;
 }
 .for-me{
     font-size: 20px;
     color: #2A2A2A;
     text-align: justify;
     margin: 5px;
+    padding: 15px;
     border: #000 2px solid;
+    width: 50%;
+    border-radius: 25px;
+    border-style: dashed;
+}
+.for-me h3{
+    margin: 5px;
 }
 
 /*FINALIZA SEGUNDA PARTE Y EMPIEZA TERCERA*/
 
+.cuerpoH{
+    display: block;
+    margin: 10px;
+    justify-items: center;
+    height: auto;
+    width: 70%;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #2A2A2A;
+    border-style: dashed;
+    border-radius: 25px;
+}
 .habilidades{
     display: flex;
     text-align: center;
-    margin: 5px;
-    border: 3px solid #2A2A2A;
+    border: 0px solid #2A2A2A;
     color: #2A2A2A;
     justify-content: center;
-    width: 80%;
+    width: 90%;
+    margin: 10px;
 }
 .caja{
     display: inline-block;
-    margin: 10px;
     border: 2px solid #2A2A2A;
     padding: 10px;
     color: #2A2A2A;
+    border-radius: 25px;
     width: 50%;
+    margin: 10px;
 }
 .cajita{
     display: inline-flex;
@@ -198,13 +231,7 @@ body{
 #op{
     width: 50%;
 }
-.proyectos{
-    display: flex;
-    text-align: center;
-    margin: 5px;
-    border: 3px solid #2A2A2A;
-    color: #2A2A2A;
-}
+
 input{
     width: 100%;
     margin: 5px 0px 15px 0px;
@@ -232,21 +259,92 @@ input{
     margin: 20px;
     padding: 10px;
 }
+.cuerpoP{
+    display: block;
+    margin: 10px;
+    justify-items: center;
+    height: auto;
+    text-align: center;
+}
 #descrip{
     text-align: center;
     border: 5px solid #000;
-    width: 100%;
+    background: #101828;
+    width: 70%;
+    margin: 20px;
+    padding: 10px;
+    display: grid;
+    color: #fff;
+    border-radius: 30px;
+    padding: 20px;
+}
+#proyec{
+    text-align: left;
+    border: 2px solid gray;
+    width: auto;
     margin: 20px;
     padding: 10px;
     display: flex;
+    height: 400px;
+    border-radius: 50px;
+    border-style: dashed;
 }
-#proyec{
+.descT{
+    margin: 10px;
+    height: auto;
+    border: #000 0px solid;
+    text-align: justify;
+    color: #fff;
+}
+.descP{
+    margin: 10px;
+    height: 50%;
+    border: #000 0px solid;
+    text-align: justify;
+    color: #fff;
+}
+.descB{
+    margin: 10px;
+    height: 30%;
+    border: #000 0px solid;
+    text-align: justify;
+}
+.descB button{
+    border-radius: 25px;
+}
+.descB button a{
     text-align: center;
-    border: 5px solid #000;
-    width: 100%;
-    margin: 20px;
+    border-radius: 25px;
+    display: flex;
+    padding: 2px;
+    background: #fff;
+    color: #101828;
+}
+.descB button a:hover{
+    background: #45556C;
+    color: #fff;
+}
+.Fproy{
+    margin: 10px;
+    width: 60%;
+    height: auto;
+    border: #000 0px solid;
+    text-align: center;
+}
+.Foproy{
+    border-radius: 25px;
+    margin: 15px;
+    height: 90%;
+    width: 85%;
+    box-shadow: #fff 0px 5px 15px;
+}
+.Cproyec{
+    display: inline-block;
+    border: 0px solid #2A2A2A;
     padding: 10px;
-    display: block;
+    color: #2A2A2A;
+    border-radius: 25px;
+    width: 40%;
 }
 @media( max-width:991px){
     .welcome{
@@ -281,15 +379,15 @@ input{
 
 .formu{
     margin: 10px;
-    border: 3px solid #2A2A2A;
+    border: 0px solid #101828;
     padding: 10px;
-    color: #2A2A2A;
+    color: #101828;
     text-align: center;
     justify-items: center;
 }
 .contact{
     margin: 5px;
-    border: 3px solid #2A2A2A;
+    border: 3px solid #101828;
     padding: 20px;
     color: #2A2A2A;
     border-radius: 20px;
@@ -305,12 +403,13 @@ input{
     padding: 10px;
     width: 100%;
     border-radius: 20px;
+    border: 2px solid #101828;
 }
 input{
     border-radius: 20px;
     margin: 10px;
 }
-.btn{
+.botn{
     border-radius: 20px;
     background-color: #101828;
     color: #fff;
@@ -318,7 +417,7 @@ input{
     width: 100%;
     cursor: pointer;
 }
-.btn:hover{
+.botn:hover{
     background-color:#45556C;
 }
 
